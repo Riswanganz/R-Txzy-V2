@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 R-Txzy 〕
+┌─〔 Wanz 〕
 ├ Hai, *%name!*
 ├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
@@ -258,7 +258,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "rowId": ".? xp"
                                 }, { 
                                     "title": "|🔞| NSFW",
-                                    "description": "Menu Bokep",
+                                    "description": "Menu Haram",
                                     "rowId": ".? nsfw"
                                 }, { 
                                     "title": "|🖼️| Random Image",
@@ -349,7 +349,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik R-Txzy",
+                                    "description": "pemilik Wanz",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
