@@ -8,6 +8,7 @@ BIG THANKS TO
 • Xteam
 • AlyaaXzy 
 • BOTCAHX
+• WaaoneOfc
 • Zeks
 • Penyedia Layanan API
 • Orang-orang yang Berdonasi
