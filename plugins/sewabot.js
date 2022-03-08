@@ -3,7 +3,7 @@ let { MessageType } = require('@adiwajshing/baileys')
 let handler = async(m, { conn }) => {
     let kamisato = `
 ┌〔 List Berlangganan 〕
-├ Permanen : Rp 5000
+├ 1 Bulan : Rp 10000
 ├ Trial 3 Hari (FREE)
 └────
 Silahkan klik pada "List Harga" untuk melihat list, hanya bisa via pulsa.
@@ -15,7 +15,7 @@ Pulsa : 083804343232
         buttonText: 'List Harga',
         description: kamisato,
         sections:  [{title: "Silahkan di pilih", rows: [
-        {title: 'Permanen', description: "Rp5.000\nSewa bot tanpa batasan waktu.", rowId:".masuk"},
+        {title: '1 Bulan', description: "Rp10.000\nSewa bot dalam waktu 30 hari.", rowId:".masuk"},
         {title: 'Trial', description: "GRATIS\nBot gratis 3 Hari, hanya orang baru yang mengunjungi bot saja.", rowId:".join"},
         {title: 'Owner', description: "Chat owner nya jika ada perlu.", rowId:".owner"},
         {title: 'Rules', description: "Kebijakan Privasi, Syarat Ketentuan dan Peraturan.", rowId:".snk"},
