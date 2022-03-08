@@ -15,8 +15,8 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'R-Txzy tidak aktif' : banned ? 'kamu dibanned' : 'R-Txzy disini',
-                '©R-Txzy',
+                isBanned ? '©Wanz tidak aktif' : banned ? 'kamu dibanned' : 'Wanz disini',
+                '©Wanz',
                 isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
                 isBanned ? '.unban' : banned ? '.owner' : '.?',
                 m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
@@ -30,12 +30,12 @@ handler.all = async function (m, { isBlocked }) {
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
 ╠➥ *Permanen* : *Rp 5000*
-╠➥ *Premium* :   *Rp 15000*
+╠➥ *Trial* :   *3 Hari FREE*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
-╠➥ Dana, Dan Pulsa
+╠➥ Pulsa
 ║
-╠═〘 Wanz〙 ═`.trim(), '© Wanz', 'Gopay', '#viadana', 'Pulsa', '#viapulsa', m)
+╠═〘 Wanz〙 ═`.trim(), '© Wanz', 'Pulsa', '#viapulsa', m)
 }
 
     // salam
