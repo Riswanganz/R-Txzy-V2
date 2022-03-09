@@ -3,7 +3,7 @@ let moment = require('moment-timezone')
 let handler = async(m, { conn, usedPrefix, args, command }) => {
     let name = conn.getName(m.sender)
     let tulisan = `
-Halo ${name}, ${ucapan()} selamat datang di menu panduan R-Txyz. di menu ini kalian bisa mendapatkan panduan soal bot whatsapp.
+Halo ${name}, ${ucapan()} selamat datang di menu panduan Wanz. di menu ini kalian bisa mendapatkan panduan soal bot whatsapp.
 ┌〔 List Panduan 〕
 ├ how
 ├ owner
@@ -54,13 +54,13 @@ global.panduan = [
     {
         "index": "2",
         "search": "how",
-        "deskripsi": "Cara menggunakan bot adalah dengan mengetikkan command bot. List command bot ada pada menu bot. jangan lupa, untuk mengakses command harus menggunakan prefix.\nPrefix R-Txzy adalah all prefix.\nContoh penggunaan prefix dan command yang benar: *.menu*",
+        "deskripsi": "Cara menggunakan bot adalah dengan mengetikkan command bot. List command bot ada pada menu bot. jangan lupa, untuk mengakses command harus menggunakan prefix.\nPrefix Wanz adalah all prefix.\nContoh penggunaan prefix dan command yang benar: *.menu*",
         "judul": "Cara menggunakan bot dan prefix"
     },
     {
         "index": "3",
         "search": "add",
-        "deskripsi": "Cara menambahkan bot ke dalam group. silahkan baca pada menu sewa dengan mengetikkan *.sewa*. Haruno bot memberlakukan trial gratis 3 hari. Setelah 3 hari maka bot akan keluar dari group. ada opsi 1 minggu, 1 bulan dan 2 bulan berlangganan.",
+        "deskripsi": "Cara menambahkan bot ke dalam group. silahkan baca pada menu sewa dengan mengetikkan *.sewa*. Wanz bot memberlakukan trial gratis 3 hari. Setelah 3 hari maka bot akan keluar dari group. dan kalian kamu bisa sewa bot dengan harga 5k untuk permanen.",
         "judul": "Cara menambahkan bot ke group",
     },
     {
