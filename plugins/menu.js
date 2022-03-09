@@ -205,7 +205,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                         "title": `*${ucapan()}, ${name}*`.trim(),
                         "description": `© *Wanz*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
-                        "buttonText": "*Click Here*",
+                        "buttonText": "*Pencet Di Sini*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
@@ -256,10 +256,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "title": "|📈| XP",
                                     "description": "XP Dan Level",
                                     "rowId": ".? xp"
-                                }, { 
-                                    "title": "|🔞| NSFW",
-                                    "description": "Menu Haram",
-                                    "rowId": ".? nsfw"
                                 }, { 
                                     "title": "|🖼️| Random Image",
                                     "description": "Menu Foto Random",
@@ -336,10 +332,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "title": "|ℹ️| Info",
                                     "description": "Info Tentang Bot",
                                     "rowId": ".? info"
-                                }, { 
-                                    "title": "Tanpa Kategori",
-                                    "description": "",
-                                    "rowId": ".? tanpakategori"
                                 }, { 
                                     "title": "|🧑‍💻| Owner",
                                     "description": "Menu Khusu Owner",
