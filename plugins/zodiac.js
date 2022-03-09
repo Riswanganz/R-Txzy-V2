@@ -19,6 +19,7 @@ Lahir : ${birth.join('-')}
 Ultah Mendatang : ${birthday.join('-')}
 Usia : ${cekusia}
 Zodiak : ${zodiac}
+Note : jangan terlalu percaya zodiac ini hanya mainan belaka.
 `.trim()
     m.reply(teks)
 }
