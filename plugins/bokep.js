@@ -1,2 +1,13 @@
+let fs = require('fs')
+let handler = async (m, { conn }) => {
+	if (!db.data.chats[m.chat].nsfw && m.isGroup) throw global.nsfw
+	let stc = fs.readFileSync('./src/sukses.webp')
+ conn.sendFile(m.chat, 'FITUR INI TELAT DI HAPUS, INGET DOSA', m)
+}
+handler.help = ['bkp']
+handler.tags = ['bokep']
 
-// ga ada bokep bokepan
+handler.command = /^(bkp)$/i
+handler.premium = false
+handler.register = false
+module.exports = handler
