@@ -40,6 +40,7 @@ handler.tags = ['admin']
 handler.command = /^(add|\+)$/i
 
 handler.group = true
+handler.premium = true
 handler.admin = true
 handler.botAdmin = true
 handler.limit = true
