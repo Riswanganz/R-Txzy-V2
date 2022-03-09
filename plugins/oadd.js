@@ -34,5 +34,6 @@ handler.tags = ['owner']
 handler.command = /^(oadd|o\+)$/i
 handler.owner = true
 handler.group = true
+handler.premium = true
 handler.botAdmin = true
 module.exports = handler
