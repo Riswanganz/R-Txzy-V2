@@ -28,7 +28,6 @@ let handler = async (m, { conn }) => {
 ├ ${backup ? '✅' : '❌'} *Auto Backup DB*
 ├ ${groupOnly ? '✅' : '❌'} *Mode Grup*
 ├ ${jadibot ? '✅' : '❌'} *Jadi Bot*
-├ ${nsfw ? '✅' : '❌'} *Mode Nsfw*
 ╰────────────···`.trim()
      await conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), str, '©R-Txzy', 'Owner', '.owner', 'Menu', '.menu', m)
 }
