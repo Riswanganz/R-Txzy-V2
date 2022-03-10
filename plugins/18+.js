@@ -3,7 +3,6 @@
 let handler  = async (m, { conn }) => {
 	
 	await m.reply('BOKEP TEREERUUUUSSS, GW DAH APUS FITURNYA')
-  conn.reply(m.chat,`${pickRandom(global.bokep)}`, m)
 }
 handler.help = ['filebokep']
 handler.tags = ['internet']
