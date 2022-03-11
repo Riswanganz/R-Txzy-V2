@@ -3,7 +3,7 @@ let handler = async (m, { conn, args }) => {
 	await conn.updatePresence(m.chat, Presence.composing) 
 	let list = Object.entries(global.DATABASE.data.users)
 	if(!args || !args[0]) {
-		var lim = 10
+		var lim = 20
 	} else {
 		var lim = parseInt(args[0])
 	}
