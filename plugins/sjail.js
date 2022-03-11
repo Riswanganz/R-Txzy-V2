@@ -11,8 +11,8 @@ let handler = async (m, { conn, text }) => {
   if (!/image\/(jpe?g|png)/.test(mime)) throw `Mime ${mime} tidak support`
   let img = await q.download()
   let url = await uploadImage(img)
-  let wanted = global.API('dzx', '/api/canvas/wanted', { url }) //`https://api.dhamzxploit.my.id/api/canvas/wanted?url=${url}`
-  let stiker = await sticker(null, wanted, 'jail', '©games-wabot')
+  let wanted = global.API('dzx', 'http://zekais-api.herokuapp.com/jail?url=https://i.pinimg.com/736x/30/e3/b3/30e3b3d7157a3cee502760a4a17c20fd.jpg&apikey=mZUEFI2U', { url }) //`https://api.dhamzxploit.my.id/api/canvas/wanted?url=${url}`
+  let stiker = await sticker(null, wanted, 'jail', '© Wanz')
   conn.sendMessage(m.chat, stiker, MessageType.sticker, {
     quoted: m
   })
