@@ -14,18 +14,18 @@ let handler = async (m, { conn, text }) => {
       let img = await q.download()
       let out = await webp2png(img)
       if (!img) throw `balas stiker dengan perintah ${usedPrefix + command} <packname>|<author>`
-      stiker = await sticker(0, out, packname || '', author || '')
+      stiker = await sticker(0, out, packname || 'Wanz', author || 'Bot')
     } else if (/image/.test(mime)) {
       let img = await q.download()
       let link = await uploadImage(img)
       if (!img) throw `balas gambar dengan perintah ${usedPrefix + command} <packname>|<author>`
-      stiker = await sticker(0, link, packname || '', author || '')
+      stiker = await sticker(0, link, packname || 'Wanz', author || 'Bot')
     } else if (/video/.test(mime)) {
       if ((q.msg || q).seconds > 11) throw 'Maksimal 10 detik!'
       let img = await q.download()
       let link = await uploadFile(img)
       if (!img) throw `balas video dengan perintah ${usedPrefix + command} <packname>|<author>`
-      stiker = await sticker(0, link, packname || '', author || '')
+      stiker = await sticker(0, link, packname || 'Wanz', author || 'Bot')
     }
   } finally {
     if (stiker) await conn.sendMessage(m.chat, stiker, MessageType.sticker, {
