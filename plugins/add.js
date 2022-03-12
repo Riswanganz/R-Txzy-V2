@@ -70,7 +70,7 @@ handler.tags = ['admin']
 
 handler.command = /^(add|\+)$/i
 
-handler.owner = false
+handler.owner = true
 
 handler.mods = false
 
@@ -83,9 +83,5 @@ handler.private = false
 handler.admin = true
 
 handler.botAdmin = true
-
-handler.fail = null
-
-handler.limit = true
 
 module.exports = handler
