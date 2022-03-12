@@ -17,9 +17,7 @@ handler.all = async function (m) {
 *Hi ${name}, ${ucapan()}*
 Saya adalah Wanz Bot salah satu bot WhatsApp.
 
-*Harap untuk tidak menelpon, meminta save, atau spam dalam penggunaan bot*
-Silahkan baca rules dan mematuhi rules demi kenyamanan kita bersama.
-Terimakasih
+*BIASAKAN BACA RULES ATAU PERATURAN AGAR TIDAK SESAT DI JALAN*
 
 Jika ada kendala silahkan hubungi owner.
 `.trim(), watermark, 'Menu', '.?', 'Rules', '.rules')
@@ -29,18 +27,18 @@ Jika ada kendala silahkan hubungi owner.
 module.exports = handler
 function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
-    res = "Selamat dinihari"
+    res = "Selamat dinihari sayang"
     if (time >= 4) { 
-        res = "Selamat pagi"
+        res = "Selamat pagi sayang"
     }
     if (time > 10) {
-        res = "Selamat siang"
+        res = "Selamat siang sayang"
     }
     if (time >= 15) {
-        res = "Selamat sore"
+        res = "Selamat sore sayang"
     }
     if (time >= 18) {
-        res = "Selamat malam"
+        res = "Selamat malam sayang"
     }
     return res
 }
