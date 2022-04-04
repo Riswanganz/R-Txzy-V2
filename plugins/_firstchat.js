@@ -15,11 +15,7 @@ handler.all = async function (m) {
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await conn.send2ButtonLoc(m.chat, await(await fetch(thumbfoto)).buffer(), `
 *Hi ${name}, ${ucapan()}*
-Saya adalah Wanz Bot salah satu bot WhatsApp.
-
-*BIASAKAN BACA RULES ATAU PERATURAN AGAR TIDAK SESAT DI JALAN*
-
-Jika ada kendala silahkan hubungi owner.
+Mohon maaf bapak/ibu ada perlu apa ya?.
 `.trim(), watermark, 'Menu', '.?', 'Rules', '.rules')
     user.pc = new Date * 1
 }
