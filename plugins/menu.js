@@ -64,10 +64,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   if (teks == 'edukasi') tags = {
     'edukasi': 'Edukasi'
   }
-  if (teks == 'nsfw') tags = {
-    'hentai': 'Hentai',
-    'bokep': 'Bokep'
-  }
   if (teks == 'stiker') tags = {
     'sticker': 'Stiker'
   }
@@ -128,9 +124,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
   }
   if (teks == 'audio') tags = {
     'audio': 'Pengubah Suara'
-  }
-  if (teks == 'jadibot') tags = {
-    'jadibot': 'Jadi Bot'
   }
   if (teks == 'info') tags = {
     'info': 'Info'
