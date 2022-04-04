@@ -28,7 +28,7 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `INVIT BOT KE GRUP UDAH GA BAYAR JADI TINGGAL LU MASUKIN BOT KE GRUP LU`.trim(), '© Wanz', 'Terimakasih', 'Terimakasih', m)
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `BOT TIDAK UNTUK UMUM, KALAU MAU PAKE BOT INI wa.me/6283830086398`.trim(), '© Wanz', 'Terimakasih', 'Terimakasih', m)
 }
 
     // salam
